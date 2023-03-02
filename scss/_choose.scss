@@ -1,0 +1,33 @@
+.your-choose {
+  padding: 0 70px;
+  margin-top: 234px;
+  h2 {
+    font-family: $font-pop;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 48px;
+  }
+  .choose-info {
+    display: flex;
+    gap: 40px;
+
+    .choose-item {
+      h4 {
+        font-family: $font-pop;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-family: $font-rob;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #595959;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  background-color: $primary-color;
+  //   color: $primary-color;
+  .logo {
+    margin-left: 220px;
+  }
+  .header-nav {
+    color: $text-color;
+    list-style: none;
+    margin-right: 220px;
+    font-family: $font-pop;
+    font-weight: 500;
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.bio {
+    height: 680px;
+    display: flex;
+    background-color: $yellow-color;
+    margin-top: 120px;
+    .bio-content {
+        margin-left: 40px;
+
+        p {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 48px;
+            font-style: italic;
+            margin-top: 296px;
+            max-width: 600px;
+        }
+        span {
+            font-family: $font-pop;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #A66F00;
+            margin-top: 12px;   
+        }
+    }
+}
