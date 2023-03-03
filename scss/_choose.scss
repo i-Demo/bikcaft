@@ -10,7 +10,6 @@
   }
   .choose-info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     gap: 40px;
 
@@ -41,6 +40,8 @@
       font-size: 56px;
     }
     .choose-info {
+    flex-wrap: wrap;
+
       .choose-item {
         width: 100%;
       }

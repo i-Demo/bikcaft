@@ -163,7 +163,6 @@ a {
 }
 .your-choose .choose-info {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
 }
@@ -186,6 +185,9 @@ a {
 @media only screen and (max-width: 991.98px) {
   .your-choose h2 {
     font-size: 56px;
+  }
+  .your-choose .choose-info {
+    flex-wrap: wrap;
   }
   .your-choose .choose-info .choose-item {
     width: 100%;
