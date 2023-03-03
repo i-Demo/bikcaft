@@ -3,12 +3,16 @@
   color: $text-color;
   padding-top: 62px;
   padding-bottom: 32px;
+  padding-left: 222px;
+
   .wrapper {
     display: flex;
+    flex-wrap: wrap;
+
     .logo {
-      margin-left: 222px;
       display: inline-block;
       margin-right: 164px;
+      margin-bottom: 50px;
     }
     .contact {
       display: inline-block;
@@ -16,8 +20,8 @@
       .social {
         margin-top: 36px;
         img {
-            margin-right: 32px;
-            cursor: pointer;
+          margin-right: 32px;
+          cursor: pointer;
         }
       }
     }
@@ -52,4 +56,39 @@
     margin-left: 160px;
     margin-top: 80px;
   }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .footer {
+    padding-left: 100px;
+    .wrapper {
+      // justify-content: space-between;
+      // display: block;
+
+      .contact {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .footer {
+    .wrapper {
+      flex-direction: column;
+
+      // justify-content: space-between;
+      // display: block;
+      .logo {
+        margin-right: 0;
+      }
+      .contact {
+        margin-right: 0 !important;
+        margin-left: 0;
+      }
+    }
+    .slogan {
+      margin-left: 10px;
+    }
+  }
+  
 }

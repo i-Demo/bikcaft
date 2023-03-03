@@ -1,27 +1,42 @@
 .bio {
-    height: 680px;
-    display: flex;
-    background-color: $yellow-color;
-    margin-top: 120px;
-    .bio-content {
-        margin-left: 40px;
+  height: 680px;
+  display: flex;
+  background-color: $yellow-color;
+  margin-top: 120px;
+  .bio-content {
+    margin-left: 40px;
 
-        p {
-            font-family: 'Merriweather', serif;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 48px;
-            font-style: italic;
-            margin-top: 296px;
-            max-width: 600px;
-        }
-        span {
-            font-family: $font-pop;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 32px;
-            color: #A66F00;
-            margin-top: 12px;   
-        }
+    p {
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 48px;
+      font-style: italic;
+      margin-top: 296px;
+      max-width: 600px;
     }
+    span {
+      font-family: $font-pop;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #a66f00;
+      margin-top: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .bio {
+    display: inline-block;
+    background-color: unset;
+
+    .bio-img {
+      img {
+        width: 100%;
+      }
+    }
+    .bio-content {
+        margin-bottom: 30px;
+    }
+  }
 }

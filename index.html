@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500;600&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="advance-img">
+                <div class="advance-img" data-aos="fade-left"  data-aos-duration="2000">
                     <img src="./img/diferencial.png" width="600px" height="1120px" alt="diferencial">
                 </div>
             </div>
@@ -130,10 +131,10 @@
                 </div>
             </div>
             <div class="bio">
-                <div class="bio-img">
+                <div class="bio-img" data-aos="fade-left"  data-aos-duration="2000">
                     <img src="./img/depoimento.png" alt="">
                 </div>
-                <div class="bio-content">
+                <div class="bio-content" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000">
                     <p>
                         <img src="./img/“.png" alt="">
                         Cycling has always been my passion, what the people at Bikcraft have done is intensify my love
@@ -220,6 +221,10 @@
             </footer>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

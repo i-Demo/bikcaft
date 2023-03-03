@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .partners {
   margin-top: 200px;
 
@@ -20,12 +22,57 @@
       padding: 50px 100px;
       border-right: 2px solid #ededed;
       border-bottom: 2px solid #ededed;
+      animation: fade-right 1s ease-in-out;
+
       &:nth-child(4n) {
         border-right: none;
       }
       &:nth-child(n+5) {
         border-bottom: none;
       }
+
+      @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+            // -webkit-animation-delay: #{math.div($i, 5)}s;
+            animation-delay: #{math.div($i, 5)}s;
+        }
+    }
     }
   }
 }
+
+@keyframes fade-right {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .partners {
+    .partners-wrapper {
+      .partner-item {
+        border: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 968px) {
+  .partners {
+    h2 {
+      margin-left: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .partners {
+    h2 {
+      margin-left: 0;
+    }
+  }
+}
+

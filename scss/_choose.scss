@@ -10,6 +10,8 @@
   }
   .choose-info {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 40px;
 
     .choose-item {
@@ -27,6 +29,32 @@
         font-size: 18px;
         line-height: 24px;
         color: #595959;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .your-choose {
+
+    h2 {
+      font-size: 56px;
+    }
+    .choose-info {
+      .choose-item {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .your-choose {
+    h2 {
+      font-size: 48px;
+    }
+    .choose-info {
+      .choose-item {
+        flex: 1;
       }
     }
   }
